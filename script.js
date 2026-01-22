@@ -12,9 +12,12 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('show');
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.05 });
+
 
 petCards.forEach(card => observer.observe(card));
+
+/* ===== Close menu when clicking a link ===== */
 document.querySelectorAll('#menu a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById("menu").classList.remove("show");
