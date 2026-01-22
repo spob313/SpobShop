@@ -9,33 +9,43 @@
 
 <body>
 
-<header>
-  <div class="logo">MyStore</div>
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+  <div class="header-left">
+    <img src="images/logoStore.jpg" alt="Shopping Corner" class="site-logo">
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   <nav id="menu">
     <a href="index.html">All Products</a >
-    <a href="pet.html">Pet</a >
-    <a href="gadgets.html">Gadgets</a >
+    <a href="pet.html">Pet Products</a >
+    <a href="smart.html">Smart Products</a >
   </nav>
 </header>
 
-<h2 style="text-align:center; margin:20px 0;">Pet Products</h2>
+<!-- ===== TITLE ===== -->
+<h2 class="page-title">Pet Products</h2>
 
-<div class="pet-products">
+<!-- ===== PET PRODUCTS ===== -->
+<section class="pet-products">
 
   <!-- PRODUCT 1 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
-    <img src="images/flyingball.jpg" alt="flying Ball">
+  <div class="pet-card">
+    <img src="images/flyingball.jpg" alt="Flying Ball">
     <div class="pet-info">
-      <p>High-energy, durable flying saucer bouncing ball designed for dogs, kids, and family play. Made from tough elastic material that bounces and soars for long-distance throws — perfect for outdoor exercise, fetch, and active play sessions..</p >
+     <p>High-energy, durable flying saucer bouncing ball designed for dogs and active outdoor play.</p >
       <a href="https://s.click.aliexpress.com/e/_c3JQm3dH" target="_blank">
         Buy on AliExpress
       </a >
     </div>
-  </div>
 
-  <!-- PRODUCT 2 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+ <!-- PRODUCT 2 -->
+  <div class="pet-card">
     <img src="images/ball ball launcher.jpg" alt="ball launcher">
     <div class="pet-info">
       <p>Hands-free, rechargeable tennis ball launcher that automatically catapults balls for dogs to chase. Interactive, fun, and safe — perfect for solo play, high-energy exercise, and training sessions.</p >
@@ -45,8 +55,9 @@
     </div>
   </div>
 
+
   <!-- PRODUCT 3 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/cat ball.jpg" alt="ball launcher">
     <div class="pet-info">
       <p>Features smart obstacle avoidance for endless fun. Durable and built to last, it's perfect for cats and dogs. The smooth surface makes cleaning quick and easy.</p >
@@ -57,7 +68,7 @@
   </div>
 
     <!-- PRODUCT 4 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/flying bird.jpeg" alt="ball launcher">
     <div class="pet-info">
       <p>A touch-activated, rechargeable plush bird that flaps for interactive play. Includes catnip to attract and engage your cat for safe, active fun</p >
@@ -68,7 +79,7 @@
   </div>
 
       <!-- PRODUCT 5 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/pet spray.jpeg" alt="ball launcher">
     <div class="pet-info">
       <p>The brush is free from high-concerned chemicals, making it a safe and gentle option for your pet's sensitive skin.Ideal for dogs of all breeds and sizes, this grooming brush is a versatile tool for maintaining your pet's coat health and appearanc</p >
@@ -79,7 +90,7 @@
   </div>
 
         <!-- PRODUCT 6 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/pet brush.jpg" alt="ball launcher">
     <div class="pet-info">
       <p>gently removes Loose Hair, and eliminates Tangles, Knots, Dander and trapped Dirt. This slicker brush is suitable for many pets dogs, cats, fragrance pigs, rabbit</p >
@@ -90,7 +101,7 @@
   </div>
 
           <!-- PRODUCT 7 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/auto feader.jpeg" alt="ball launcher">
     <div class="pet-info">
       <p>Smart Pet Feeder automatically serves timed and controlled portions for cats and dogs, helping prevent overeating and support healthy digestion. Simple, reliable, and perfect for everyday use.</p >
@@ -101,7 +112,7 @@
   </div>
 
           <!-- PRODUCT 8 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/warm winter house.jpeg" alt="ball launcher">
     <div class="pet-info">
       <p>Warm Enclosed Pet Bed offers a soft, cozy, and secure sleeping space for cats and dogs, keeping them warm and comfortable all year round.</p >
@@ -112,7 +123,7 @@
   </div>
 
           <!-- PRODUCT 9 -->
-  <div class="pet-card" onclick="toggleInfo(this)">
+  <div class="pet-card">
     <img src="images/cat vest.jpeg" alt="ball launcher">
     <div class="pet-info">
       <p>Cat & Dog Harness Vest with Leash is made from breathable polyester mesh and features an adjustable design for a comfortable and secure fit. Ideal for small to medium pets, it ensures safe and easy walks.</p >
@@ -122,8 +133,12 @@
     </div>
   </div>
 
+    
+  </div>
 
-</div>
+  <!-- زيد باقي المنتجات بنفس الطريقة -->
+
+</section>
 
 <script src="script.js"></script>
 </body>

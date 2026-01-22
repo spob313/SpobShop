@@ -1,17 +1,22 @@
 function toggleMenu() {
   const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  menu.classList.toggle("show");
 }
 
-// Animate products on scroll
+/* ===== Animate products on scroll ===== */
 const petCards = document.querySelectorAll('.pet-card');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){
+    if (entry.isIntersecting) {
       entry.target.classList.add('show');
     }
   });
 }, { threshold: 0.2 });
 
 petCards.forEach(card => observer.observe(card));
+document.querySelectorAll('#menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("menu").classList.remove("show");
+  });
+});

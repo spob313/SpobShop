@@ -1,36 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Top Products</title>
+  <title>Shopping Corner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">MyStore</div>
-
-  <div class="menu-icon" onclick="toggleMenu()">
-    ☰
+<header class="main-header">
+  <div class="header-left">
+    <img src="images/shopping_corner_no_bg.png" alt="Shopping Corner" class="site-logo">
   </div>
 
-  <nav id="menu">
-    <a href=" ">All Products</a >
-    <a href="pet.html">Pet products</a >
-    <a href="gadgets.html">Gadgets</a >
-  </nav>
-</header>
+  <div class="menu-icon" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
-<header>
-  <h1>Top Trending Products</h1>
-  <p>Best picks from AliExpress</p >
+
+  <nav id="menu">
+    <a href="index.html" class="active">All Products</a >
+    <a href="pet.html">Pet Products</a >
+    <a href="smart.html">Smart Products</a >
+  </nav>
 </header>
 
 <section class="products">
 
-  <div class="card">
+<div class="card">
     <img src="images/flyingball.jpg">
     <h3>Flying Saucer Bouncing Ball</h3>
     <a href="https://s.click.aliexpress.com/e/_c3JQm3dH" target="_blank">Buy on AliExpress</a >
@@ -102,15 +101,12 @@
     <a href="https://s.click.aliexpress.com/e/_c3di3NRD" target="_blank">Buy on AliExpress</a >
   </div>
 
-
-  <!-- زيد حتى 10 منتجات -->
-
 </section>
 
 <footer>
-  © 2026 - SpobShop
+  © 2026 - Shopping Corner
 </footer>
 
-</body>
 <script src="script.js"></script>
+</body>
 </html>
